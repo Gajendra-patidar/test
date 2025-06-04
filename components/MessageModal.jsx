@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import {
-  Text,
-  View,
+  Animated,
+  Image,
   Modal,
   StyleSheet,
-  Image,
+  Text,
   TouchableWithoutFeedback,
-  Animated
+  View
 } from "react-native";
 
 export const MessageModal = ({
@@ -24,7 +24,7 @@ export const MessageModal = ({
   useEffect(() => {
     Animated.timing(fadeAnim, {
       toValue: 1,
-      duration: 2000,
+      duration: 800,
       useNativeDriver: true,
     }).start();
   }, []);
@@ -40,10 +40,14 @@ export const MessageModal = ({
         <Animated.View style={[styles.modalContainer, { opacity: fadeAnim }]}>
           <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.modalContent}>
-              <Image
-                source={{ uri: notificationData?.android?.imageUrl }}
-                style={styles.image}
-              />
+              {
+                notificationData?.android?.imageUrl && (
+                  <Image
+                    source={{ uri: notificationData?.android?.imageUrl }}
+                    style={styles.image}
+                  />
+                )
+              }
               <Text style={styles.modalTitle}>{notificationData?.title}</Text>
               <Text style={styles.modalBody}>{notificationData?.body}</Text>
             </View>
