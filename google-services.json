@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "725928037848",
-    "project_id": "notification-feature-f9d35",
-    "storage_bucket": "notification-feature-f9d35.firebasestorage.app"
+    "project_number": "965981593769",
+    "project_id": "practise-notification",
+    "storage_bucket": "practise-notification.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:725928037848:android:2f08b03a0850d3667af6ad",
+        "mobilesdk_app_id": "1:965981593769:android:a3e3c3ef82d133c7a6c9b8",
         "android_client_info": {
-          "package_name": "com.company.client"
+          "package_name": "com.golu2002.client"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCkUYBD54si0_O7NJzYMJUDGZNw6CJX9gw"
+          "current_key": "AIzaSyADJ39fbkA5cwo43jH7pdOGcTBwgd2A-zQ"
         }
       ],
       "services": {
