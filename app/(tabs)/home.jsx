@@ -1,6 +1,6 @@
-import { StyleSheet, View, Text } from "react-native";
-import React, { useEffect, useState } from "react";
 import messaging from "@react-native-firebase/messaging";
+import React, { useEffect, useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
 import { MessageModal } from "../../components/MessageModal";
 
 const Home = () => {
@@ -66,6 +66,7 @@ const Home = () => {
   return (
     <View style={styles.mainBox}>
       <Text>Demo for notification feature</Text>
+      <Text>Check githu</Text>
       {modalVisible && (
         <MessageModal
           modalVisible={modalVisible}
