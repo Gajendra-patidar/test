@@ -67,6 +67,10 @@ const Home = () => {
     <View style={styles.mainBox}>
       <Text>Demo for notification feature</Text>
       <Text>Check githu</Text>
+      <View>
+        <Text style={styles.heading}>Home Screen</Text>
+        <Text>Firebase Cloud Messaging</Text>
+      </View>
       {modalVisible && (
         <MessageModal
           modalVisible={modalVisible}
